@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Futbolistas</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6
-/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body style="margin-top:30px;">
   <div class="container">
-  <button type="button" class="btn btn-primary">Obtener jugadores</button>
+    <button id="btn-jugadores" type="button" class="btn btn-primary">Obtener jugadores</button>
   </div>
-  <script src="//code.jquery.com/jquery.js"></script>
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Apellido</th>
+        <th>Equipo</th>
+      </tr>
+    </thead>
+    <tbody id="listado">
+    </tbody>
+  </table>
+  <script src="http://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/ajax.js"></script>
 </body>
 
 </html>
